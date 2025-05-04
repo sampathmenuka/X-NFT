@@ -1,0 +1,51 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #FFFFFF;
+    background: #0b0f34;
+    color: #FFFFFF;
+}
+
+:root {
+    --primary-color:#5C27FE;
+}
+
+ul, li{
+   list-style-type: none; 
+}
+
+p{
+    margin-bottom:0;
+}
+
+a{
+    font-family: "Audiowide";
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+a:hover{
+    transition: all 0.3s;
+    color: var(--primary-color);
+}
+
+h5,h2,
+h5{
+    font-family: "Audiowide",sans-serif;  
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+h2,
+.h2{
+    font-size: 60px;
+}

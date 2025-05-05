@@ -111,3 +111,98 @@ h2,
     width: 90vh;
     border-radius: 20px;
 }
+
+.avt{
+    height: 200px;
+    width: 200px;
+}
+
+.banner__left{
+    padding: 127px 0;
+
+}
+
+.banner__right{
+    padding: 83px 0;
+    position: relative;
+}
+
+.image{
+    width: 551px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: 74px;
+    box-shadow: 0px 16px 36px rgba(0,0,0,0.25);
+    border-radius: 130px;
+    position: relative;
+}
+
+.banner__right .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 130px;
+    position: relative;
+    z-index: 2;
+
+}
+
+.image::before, .image:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: 255, 255, 255,0.1;
+    border-radius: 130px;
+}
+
+.image::before{
+    transform: rotate(-17deg);
+
+}
+
+.image:after{
+    transform: rotate(-7deg);
+}
+.banner__right .price{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 30px;
+    position: absolute;
+    top: 168px;
+    right: 0;
+    z-index: 3;
+}
+
+.price .icon{
+    margin-right: 15px;
+    filter: drop-shadow(0px 15px 20px rgba(164,128,255,0.5));
+}
+
+.price p{
+    color: #0c1035;
+    font-size: 14px;
+
+}
+
+.price h5{
+    color: #0c1035;
+}
+
+.hover{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 206px;
+    left: 4px;
+    z-index: 3;
+}
+

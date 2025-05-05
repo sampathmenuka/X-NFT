@@ -49,3 +49,58 @@ h2,
 .h2{
     font-size: 60px;
 }
+
+
+.header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 98px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-nav .menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main-nav .menu li {
+    position: relative;
+    padding-right:30px ;
+
+}
+
+.header__action {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.action-btn span{
+    background: linear-gradient(264.28deg, #DEC7FF -38.2%, #5C27FE 103.12%);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #FFF;
+}
+
+.block-text  .desc {
+    padding-right: 130px;
+    margin-bottom: 40px;
+    font-size:16px ;
+}
+
+.action-btn span{
+    padding: 18px 56px;
+
+}

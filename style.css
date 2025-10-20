@@ -69,6 +69,14 @@ h2,
     justify-content: center;
 }
 
+.header__logo {
+    white-space: nowrap;
+}
+
+.header__logo .heart {
+    white-space: nowrap;
+}
+
 .main-nav .menu{
     display: flex;
     align-items: center;
@@ -92,6 +100,7 @@ h2,
     display: inline-block;
     text-decoration: none;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .action-btn:hover {
@@ -106,6 +115,7 @@ h2,
     display: inline-block;
     font-family: "Audiowide", sans-serif;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .action-btn:hover span {

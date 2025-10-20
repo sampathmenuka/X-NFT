@@ -88,22 +88,34 @@ h2,
     
 }
 
+.action-btn {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+    transform: translateY(-2px);
+}
+
 .action-btn span{
     background: linear-gradient(264.28deg, #DEC7FF -38.2%, #5C27FE 103.12%);
-    padding: 10px 20px;
+    padding: 18px 56px;
     border-radius: 10px;
     color: #FFF;
+    display: inline-block;
+    font-family: "Audiowide", sans-serif;
+    transition: all 0.3s ease;
+}
+
+.action-btn:hover span {
+    box-shadow: 0 5px 20px rgba(92, 39, 254, 0.5);
 }
 
 .block-text .desc {
     padding-right: 130px;
     margin-bottom: 40px;
     font-size:16px ;
-}
-
-.action-btn span{
-    padding: 18px 56px;
-
 }
 
 .img1{

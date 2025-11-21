@@ -1167,11 +1167,24 @@ textarea.form-control {
     .image {
         max-width: 400px;
     }
+    
+    .about-content {
+        padding: 0 15px;
+        margin-top: 30px;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
 }
 
 @media (max-width: 992px) {
     .main-nav .menu {
         padding-left: 50px;
+    }
+    
+    .main-nav .menu li {
+        padding-right: 25px;
     }
     
     .banner {
@@ -1198,25 +1211,74 @@ textarea.form-control {
         bottom: 10%;
         left: 10px;
     }
+    
+    /* Explore Page */
+    .nft-card__image {
+        height: 220px;
+    }
+    
+    /* About Page */
+    .about-story,
+    .mission-vision,
+    .core-values,
+    .team-section {
+        padding: 60px 0;
+    }
+    
+    .about-image img {
+        height: 400px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .mission-card,
+    .contact-form-wrapper,
+    .contact-info-wrapper {
+        padding: 30px;
+    }
+    
+    /* Contact Page */
+    .contact-content {
+        padding: 60px 0;
+    }
 }
 
 @media (max-width: 768px) {
+    /* Header */
+    .header {
+        height: auto;
+        padding: 15px 0;
+    }
+    
     .header__body {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
+        align-items: center;
     }
     
     .main-nav .menu {
         padding-left: 0;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px;
+        gap: 5px;
     }
     
     .main-nav .menu li {
-        padding-right: 20px;
+        padding-right: 15px;
     }
     
+    .main-nav .menu li a {
+        font-size: 14px;
+    }
+    
+    .header__action .action-btn span {
+        padding: 12px 30px;
+        font-size: 14px;
+    }
+    
+    /* Banner */
     .banner__left {
         text-align: center;
     }
@@ -1235,5 +1297,300 @@ textarea.form-control {
     .banner__right {
         display: flex;
         flex-direction: column;
+    }
+    
+    /* Explore Page */
+    .explore-section {
+        padding: 30px 0 60px;
+    }
+    
+    .filter-bar {
+        padding: 15px;
+    }
+    
+    .filter-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    
+    .nft-card__image {
+        height: 250px;
+    }
+    
+    .nft-card__content h5 {
+        font-size: 16px;
+    }
+    
+    /* About Page */
+    .about-hero,
+    .contact-hero,
+    .roadmap-hero {
+        padding: 30px 0 20px;
+    }
+    
+    .about-hero .desc,
+    .contact-hero .desc,
+    .roadmap-hero .desc {
+        font-size: 16px;
+    }
+    
+    .about-story,
+    .mission-vision,
+    .core-values,
+    .team-section,
+    .stats-section {
+        padding: 40px 0;
+    }
+    
+    .about-image img {
+        height: 300px;
+    }
+    
+    .about-content {
+        padding: 0;
+        margin-top: 30px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .section-desc {
+        font-size: 15px;
+    }
+    
+    .mission-card h4 {
+        font-size: 22px;
+    }
+    
+    .mission-card,
+    .value-card {
+        padding: 25px 15px;
+    }
+    
+    .stat-number {
+        font-size: 36px;
+    }
+    
+    .team-image {
+        height: 220px;
+    }
+    
+    .cta-title {
+        font-size: 28px;
+    }
+    
+    .cta-desc {
+        font-size: 16px;
+    }
+    
+    /* RoadMap Page */
+    .roadmap-timeline {
+        padding: 40px 0;
+    }
+    
+    .timeline-content h3 {
+        font-size: 20px;
+    }
+    
+    .roadmap-stats {
+        padding: 40px 0;
+    }
+    
+    .progress-card {
+        padding: 20px;
+    }
+    
+    /* Contact Page */
+    .contact-content {
+        padding: 40px 0;
+    }
+    
+    .contact-form-wrapper,
+    .contact-info-wrapper {
+        padding: 25px;
+        margin-bottom: 20px;
+    }
+    
+    .form-title,
+    .info-title {
+        font-size: 22px;
+    }
+    
+    .form-control {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    
+    .submit-btn {
+        padding: 15px 30px;
+        font-size: 15px;
+    }
+    
+    .faq-section {
+        padding: 40px 0;
+    }
+    
+    .accordion-button {
+        font-size: 15px;
+        padding: 15px 20px;
+    }
+    
+    .accordion-body {
+        font-size: 14px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Header */
+    .header__logo h2 {
+        font-size: 24px;
+    }
+    
+    .main-nav .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main-nav .menu li {
+        padding-right: 0;
+        padding: 5px 0;
+    }
+    
+    .header__action {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Typography */
+    h2, .h2 {
+        font-size: 32px !important;
+    }
+    
+    .heading {
+        font-size: 28px !important;
+    }
+    
+    /* Banner */
+    .block-text .desc {
+        font-size: 14px;
+    }
+    
+    .action-btn span {
+        padding: 12px 25px !important;
+        font-size: 13px !important;
+    }
+    
+    .image {
+        max-width: 250px;
+    }
+    
+    .banner__right .price,
+    .owner {
+        padding: 12px 15px;
+        max-width: 220px;
+    }
+    
+    .price h5,
+    .owner h5 {
+        font-size: 14px;
+    }
+    
+    .price p,
+    .owner p {
+        font-size: 12px;
+    }
+    
+    /* Explore Page */
+    .nft-card__image {
+        height: 200px;
+    }
+    
+    /* About Page */
+    .section-title {
+        font-size: 22px;
+    }
+    
+    .mission-card h4 {
+        font-size: 20px;
+    }
+    
+    .value-card h5 {
+        font-size: 18px;
+    }
+    
+    .stat-number {
+        font-size: 28px;
+    }
+    
+    .stat-label {
+        font-size: 14px;
+    }
+    
+    .team-info h5 {
+        font-size: 18px;
+    }
+    
+    .cta-title {
+        font-size: 24px;
+    }
+    
+    .cta-section {
+        padding: 60px 0;
+    }
+    
+    /* RoadMap Page */
+    .timeline-content {
+        padding: 20px;
+    }
+    
+    .timeline-content h3 {
+        font-size: 18px;
+    }
+    
+    .timeline-list li {
+        font-size: 14px;
+    }
+    
+    .progress-header h5 {
+        font-size: 16px;
+    }
+    
+    .progress-percentage {
+        font-size: 18px;
+    }
+    
+    /* Contact Page */
+    .contact-form-wrapper,
+    .contact-info-wrapper {
+        padding: 20px;
+    }
+    
+    .form-title,
+    .info-title {
+        font-size: 20px;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+/* Landscape Mobile */
+@media (max-width: 992px) and (orientation: landscape) {
+    .banner {
+        min-height: auto;
+    }
+    
+    .banner__left,
+    .banner__right {
+        padding: 20px 0;
     }
 }

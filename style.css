@@ -381,3 +381,226 @@ h2,
 a.active {
     color: var(--primary-color) !important;
 }
+
+/* About Page Styles */
+.about-hero {
+    padding: 50px 0 30px;
+}
+
+.about-hero .desc {
+    color: #b0b0b0;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-story {
+    padding: 80px 0;
+}
+
+.about-image {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(92, 39, 254, 0.3);
+}
+
+.about-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.about-content {
+    padding: 0 30px;
+}
+
+.section-title {
+    font-family: "Audiowide", sans-serif;
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.section-desc {
+    color: #b0b0b0;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.mission-vision {
+    padding: 80px 0;
+    background: linear-gradient(145deg, #1a1f4d, #0f1333);
+}
+
+.mission-card {
+    background: rgba(92, 39, 254, 0.1);
+    border: 2px solid rgba(92, 39, 254, 0.3);
+    border-radius: 20px;
+    padding: 40px;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(92, 39, 254, 0.4);
+}
+
+.mission-card .icon-wrapper {
+    margin-bottom: 25px;
+}
+
+.mission-card h4 {
+    font-family: "Audiowide", sans-serif;
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.mission-card p {
+    color: #b0b0b0;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.core-values {
+    padding: 80px 0;
+}
+
+.value-card {
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(145deg, #1a1f4d, #0f1333);
+    border-radius: 20px;
+    height: 100%;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(92, 39, 254, 0.2);
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(92, 39, 254, 0.3);
+}
+
+.value-icon {
+    margin-bottom: 20px;
+}
+
+.value-card h5 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.value-card p {
+    color: #b0b0b0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.stats-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--primary-color), #7543ff);
+}
+
+.stat-card {
+    padding: 30px 20px;
+}
+
+.stat-number {
+    font-family: "Audiowide", sans-serif;
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.team-section {
+    padding: 80px 0;
+}
+
+.team-card {
+    background: linear-gradient(145deg, #1a1f4d, #0f1333);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(92, 39, 254, 0.2);
+    text-align: center;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(92, 39, 254, 0.3);
+}
+
+.team-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-image img {
+    transform: scale(1.1);
+}
+
+.team-info {
+    padding: 25px 20px;
+}
+
+.team-info h5 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.team-role {
+    color: var(--primary-color);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.team-social a {
+    color: #b0b0b0;
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+
+.team-social a:hover {
+    color: var(--primary-color);
+}
+
+.cta-section {
+    padding: 100px 0;
+    background: linear-gradient(145deg, #1a1f4d, #0f1333);
+}
+
+.cta-title {
+    font-family: "Audiowide", sans-serif;
+    font-size: 42px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.cta-desc {
+    color: #b0b0b0;
+    font-size: 18px;
+    margin-bottom: 0;
+}

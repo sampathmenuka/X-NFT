@@ -1594,3 +1594,21 @@ textarea.form-control {
         padding: 20px 0;
     }
 }
+
+/* Join Page Styles */
+.form-check-input {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(92, 39, 254, 0.2);
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(92, 39, 254, 0.25);
+    border-color: var(--primary-color);
+}

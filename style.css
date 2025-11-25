@@ -129,6 +129,43 @@ h2,
     line-height: 1.6;
 }
 
+.banner__ctas{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.microcopy{
+    color: #b0b0b0;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.hero-points{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 30px;
+    margin-top: 30px;
+    padding: 0;
+}
+
+.hero-points li{
+    list-style: none;
+    font-size: 14px;
+    color: #b0b0b0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-points li span{
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+
 .img1{
     height: 100%;
     width: 100%;
@@ -299,11 +336,71 @@ h2,
 }
 
 .nft-card {
-    background: linear-gradient(145deg, #1a1f4d, #0f1333);
+    --card-gradient: linear-gradient(145deg, #1a1f4d, #0f1333);
+    --image-opacity: 1;
+    --image-blend: normal;
+    --image-filter: none;
+    background: var(--card-gradient);
     border-radius: 20px;
     overflow: hidden;
     transition: all 0.3s ease;
     border: 1px solid rgba(92, 39, 254, 0.2);
+}
+
+.theme-cosmic {
+    --card-gradient: linear-gradient(145deg, #1f1b4d, #3a1f7a);
+    --image-opacity: 0.85;
+    --image-blend: screen;
+    --image-filter: saturate(1.1);
+}
+
+.theme-harmony {
+    --card-gradient: linear-gradient(145deg, #2b1b52, #4c2360);
+    --image-opacity: 0.9;
+    --image-blend: lighten;
+    --image-filter: hue-rotate(12deg) saturate(1.2);
+}
+
+.theme-wave {
+    --card-gradient: linear-gradient(145deg, #0f2f49, #1d5665);
+    --image-opacity: 0.8;
+    --image-blend: screen;
+    --image-filter: hue-rotate(190deg) saturate(1.3);
+}
+
+.theme-neon {
+    --card-gradient: linear-gradient(145deg, #281642, #471b70);
+    --image-opacity: 0.95;
+    --image-blend: lighten;
+    --image-filter: saturate(1.4);
+}
+
+.theme-pixel {
+    --card-gradient: linear-gradient(145deg, #1a1a1a, #2e2137);
+    --image-opacity: 0.88;
+    --image-blend: normal;
+    --image-filter: contrast(1.1) saturate(1.2);
+}
+
+.theme-cyber {
+    --card-gradient: linear-gradient(145deg, #00283a, #014f5f);
+    --image-opacity: 0.85;
+    --image-blend: screen;
+    --image-filter: hue-rotate(150deg) saturate(1.4);
+}
+
+.theme-galaxy {
+    --card-gradient: linear-gradient(145deg, #120f2a, #2a1b55);
+    --image-opacity: 0.82;
+    --image-blend: screen;
+    --image-filter: saturate(1.3);
+}
+
+.theme-future {
+    --card-gradient: linear-gradient(145deg, #361344, #711a4f);
+    --image-opacity: 0.9;
+    --image-blend: lighten;
+    --image-filter: hue-rotate(-20deg) saturate(1.25);
 }
 
 .nft-card:hover {
@@ -317,13 +414,17 @@ h2,
     height: 250px;
     overflow: hidden;
     position: relative;
+    background: var(--card-gradient);
 }
 
 .nft-card__image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    opacity: var(--image-opacity);
+    mix-blend-mode: var(--image-blend);
+    filter: var(--image-filter);
 }
 
 .nft-card:hover .nft-card__image img {
@@ -337,6 +438,13 @@ h2,
 .nft-card__content h5 {
     font-size: 18px;
     margin-bottom: 10px;
+}
+
+.nft-card__desc {
+    margin-bottom: 12px;
+    color: #c9c9c9;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 .nft-card__creator {
@@ -374,6 +482,13 @@ h2,
     margin: 0;
 }
 
+.nft-edition {
+    display: block;
+    font-size: 12px;
+    color: #9b8fff;
+    margin-top: 4px;
+}
+
 .bid-btn {
     padding: 8px 20px;
     background: var(--primary-color);
@@ -407,6 +522,12 @@ a.active {
     margin: 0 auto;
 }
 
+.about-list {
+    margin: 20px 0 0;
+    padding-left: 18px;
+    color: #d0d0d0;
+}
+
 .about-story {
     padding: 80px 0;
 }
@@ -418,6 +539,10 @@ a.active {
     box-shadow: 0 10px 40px rgba(92, 39, 254, 0.3);
 }
 
+.about-list li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
 .about-image img {
     width: 100%;
     height: 500px;
@@ -1283,6 +1408,14 @@ textarea.form-control {
         text-align: center;
     }
     
+    .banner__ctas {
+        justify-content: center;
+    }
+    
+    .hero-points {
+        justify-content: center;
+    }
+    
     .image {
         max-width: 300px;
     }
@@ -1490,6 +1623,16 @@ textarea.form-control {
     .owner {
         padding: 12px 15px;
         max-width: 220px;
+    }
+    
+    .banner__ctas {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .hero-points {
+        gap: 10px 15px;
+        text-align: center;
     }
     
     .price h5,

@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse the latest curated NFT drops from X-NFT — digital paintings, audio loops, game assets, and photography with transparent pricing.">
     <title>Explore - X-NFT</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style1">
-    <link rel="stylesheet" href="style2">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 
 </head>
@@ -48,7 +47,7 @@
                             </nav>
                         </div>
                         <div class="header__action">
-                            <a href="join.html" class="action-btn "><span>Join Now</span></a>
+                            <a href="contact.html#contact-form" class="action-btn "><span>Join Now</span></a>
                         </div>
                     </div>
                 </div>
@@ -60,8 +59,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mt-5 pt-5 mb-4">
-                    <h2 class="heading">Explore NFTs</h2>
-                    <p class="desc mt-3">Discover unique digital artworks and collectibles</p>
+                    <h1 class="heading">Explore curated drops</h1>
+                    <p class="desc mt-3">Every collection is reviewed by the X-NFT curatorial board for authenticity,
+                        storytelling, and long-term value.</p>
                 </div>
             </div>
 
@@ -69,12 +69,12 @@
             <div class="row mb-5">
                 <div class="col-12">
                     <div class="filter-bar d-flex justify-content-center gap-3 flex-wrap">
-                        <button class="filter-btn active">All Items</button>
-                        <button class="filter-btn">Art</button>
-                        <button class="filter-btn">Music</button>
-                        <button class="filter-btn">Gaming</button>
-                        <button class="filter-btn">Photography</button>
-                        <button class="filter-btn">Sports</button>
+                        <button class="filter-btn active" aria-pressed="true">All Drops</button>
+                        <button class="filter-btn" aria-pressed="false">Art</button>
+                        <button class="filter-btn" aria-pressed="false">Music</button>
+                        <button class="filter-btn" aria-pressed="false">Gaming</button>
+                        <button class="filter-btn" aria-pressed="false">Photography</button>
+                        <button class="filter-btn" aria-pressed="false">Sports</button>
                     </div>
                 </div>
             </div>
@@ -83,22 +83,25 @@
             <div class="row g-4">
                 <!-- NFT Card 1 -->
                 <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="nft-card">
+                    <div class="nft-card theme-cosmic">
                         <div class="nft-card__image">
-                            <img src="img/pic1.jpg" alt="NFT">
+                            <img src="img/pic1.jpg" alt="Cosmic Dreams #001 artwork">
                         </div>
                         <div class="nft-card__content">
                             <h5>Cosmic Dreams #001</h5>
+                            <p class="nft-card__desc">Hand-painted nebula animation rendered with generative shaders
+                                and layered ambience.</p>
                             <div class="nft-card__creator d-flex align-items-center mt-2">
                                 <img src="img/avt1.jpg" alt="Creator" class="creator-avatar">
                                 <span class="creator-name">@creator001</span>
                             </div>
                             <div class="nft-card__footer d-flex justify-content-between align-items-center mt-3">
                                 <div class="price">
-                                    <span class="price-label">Price</span>
+                                    <span class="price-label">Reserve</span>
                                     <h6 class="price-value">2.5 ETH</h6>
+                                    <span class="nft-edition">Edition of 40</span>
                                 </div>
-                                <a href="" class="bid-btn">Place Bid</a>
+                                <a href="#!" class="bid-btn">Place Bid</a>
                             </div>
                         </div>
                     </div>
@@ -106,24 +109,25 @@
 
                 <!-- NFT Card 2 -->
                 <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="nft-card">
-                        <div class="nft-card__image"
-                            style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                            <img src="img/pic1.jpg" alt="NFT" style="opacity: 0.8; mix-blend-mode: overlay;">
+                    <div class="nft-card theme-harmony">
+                        <div class="nft-card__image">
+                            <img src="img/pic1.jpg" alt="Digital Harmony #042 artwork">
                         </div>
                         <div class="nft-card__content">
                             <h5>Digital Harmony #042</h5>
+                            <p class="nft-card__desc">A synesthetic study pairing glitch typography with layered synth
+                                chords.</p>
                             <div class="nft-card__creator d-flex align-items-center mt-2">
-                                <img src="img/avt1.jpg" alt="Creator" class="creator-avatar"
-                                    style="filter: hue-rotate(60deg);">
+                                <img src="img/avt1.jpg" alt="Creator" class="creator-avatar">
                                 <span class="creator-name">@artmaster</span>
                             </div>
                             <div class="nft-card__footer d-flex justify-content-between align-items-center mt-3">
                                 <div class="price">
-                                    <span class="price-label">Price</span>
+                                    <span class="price-label">Buy Now</span>
                                     <h6 class="price-value">1.8 ETH</h6>
+                                    <span class="nft-edition">1 of 25</span>
                                 </div>
-                                <a href="" class="bid-btn">Place Bid</a>
+                                <a href="#!" class="bid-btn">Make Offer</a>
                             </div>
                         </div>
                     </div>
@@ -131,25 +135,25 @@
 
                 <!-- NFT Card 3 -->
                 <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="nft-card">
-                        <div class="nft-card__image"
-                            style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                            <img src="img/pic1.jpg" alt="NFT"
-                                style="opacity: 0.7; mix-blend-mode: multiply; filter: saturate(1.5);">
+                    <div class="nft-card theme-wave">
+                        <div class="nft-card__image">
+                            <img src="img/pic1.jpg" alt="Abstract Wave #123 artwork">
                         </div>
                         <div class="nft-card__content">
                             <h5>Abstract Wave #123</h5>
+                            <p class="nft-card__desc">Sublime gradients and motion-captured brush strokes depicting
+                                breath-work cycles.</p>
                             <div class="nft-card__creator d-flex align-items-center mt-2">
-                                <img src="img/avt1.jpg" alt="Creator" class="creator-avatar"
-                                    style="filter: hue-rotate(120deg);">
+                                <img src="img/avt1.jpg" alt="Creator" class="creator-avatar">
                                 <span class="creator-name">@wavecreator</span>
                             </div>
                             <div class="nft-card__footer d-flex justify-content-between align-items-center mt-3">
                                 <div class="price">
-                                    <span class="price-label">Price</span>
+                                    <span class="price-label">Highest Bid</span>
                                     <h6 class="price-value">3.2 ETH</h6>
+                                    <span class="nft-edition">Auction ends in 6h</span>
                                 </div>
-                                <a href="" class="bid-btn">Place Bid</a>
+                                <a href="#!" class="bid-btn">Increase Bid</a>
                             </div>
                         </div>
                     </div>
@@ -157,25 +161,25 @@
 
                 <!-- NFT Card 4 -->
                 <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="nft-card">
-                        <div class="nft-card__image"
-                            style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                            <img src="img/pic1.jpg" alt="NFT"
-                                style="opacity: 0.75; mix-blend-mode: screen; filter: brightness(1.2);">
+                    <div class="nft-card theme-neon">
+                        <div class="nft-card__image">
+                            <img src="img/pic1.jpg" alt="Neon City #456 artwork">
                         </div>
                         <div class="nft-card__content">
                             <h5>Neon City #456</h5>
+                            <p class="nft-card__desc">A cinematic fly-through of a synthwave skyline rendered in real
+                                time.</p>
                             <div class="nft-card__creator d-flex align-items-center mt-2">
-                                <img src="img/avt1.jpg" alt="Creator" class="creator-avatar"
-                                    style="filter: hue-rotate(180deg);">
+                                <img src="img/avt1.jpg" alt="Creator" class="creator-avatar">
                                 <span class="creator-name">@neonart</span>
                             </div>
                             <div class="nft-card__footer d-flex justify-content-between align-items-center mt-3">
                                 <div class="price">
                                     <span class="price-label">Price</span>
                                     <h6 class="price-value">2.0 ETH</h6>
+                                    <span class="nft-edition">Minting now</span>
                                 </div>
-                                <a href="" class="bid-btn">Place Bid</a>
+                                <a href="#!" class="bid-btn">Collect</a>
                             </div>
                         </div>
                     </div>
@@ -183,25 +187,25 @@
 
                 <!-- NFT Card 5 -->
                 <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="nft-card">
-                        <div class="nft-card__image"
-                            style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
-                            <img src="img/pic1.jpg" alt="NFT"
-                                style="opacity: 0.8; mix-blend-mode: hard-light; filter: contrast(1.3);">
+                    <div class="nft-card theme-pixel">
+                        <div class="nft-card__image">
+                            <img src="img/pic1.jpg" alt="Pixel Paradise #789 artwork">
                         </div>
                         <div class="nft-card__content">
                             <h5>Pixel Paradise #789</h5>
+                            <p class="nft-card__desc">8-bit flora inspired by vintage arcade palettes and tropical
+                                gradients.</p>
                             <div class="nft-card__creator d-flex align-items-center mt-2">
-                                <img src="img/avt1.jpg" alt="Creator" class="creator-avatar"
-                                    style="filter: hue-rotate(240deg);">
+                                <img src="img/avt1.jpg" alt="Creator" class="creator-avatar">
                                 <span class="creator-name">@pixelking</span>
                             </div>
                             <div class="nft-card__footer d-flex justify-content-between align-items-center mt-3">
                                 <div class="price">
                                     <span class="price-label">Price</span>
                                     <h6 class="price-value">1.5 ETH</h6>
+                                    <span class="nft-edition">Gamified utility</span>
                                 </div>
-                                <a href="" class="bid-btn">Place Bid</a>
+                                <a href="#!" class="bid-btn">Collect</a>
                             </div>
                         </div>
                     </div>
@@ -209,25 +213,25 @@
 
                 <!-- NFT Card 6 -->
                 <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="nft-card">
-                        <div class="nft-card__image"
-                            style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
-                            <img src="img/pic1.jpg" alt="NFT"
-                                style="opacity: 0.85; mix-blend-mode: overlay; filter: saturate(1.8);">
+                    <div class="nft-card theme-cyber">
+                        <div class="nft-card__image">
+                            <img src="img/pic1.jpg" alt="Cyber Punk #321 artwork">
                         </div>
                         <div class="nft-card__content">
                             <h5>Cyber Punk #321</h5>
+                            <p class="nft-card__desc">Procedural avatars wired with on-chain traits for metaverse
+                                games.</p>
                             <div class="nft-card__creator d-flex align-items-center mt-2">
-                                <img src="img/avt1.jpg" alt="Creator" class="creator-avatar"
-                                    style="filter: hue-rotate(300deg);">
+                                <img src="img/avt1.jpg" alt="Creator" class="creator-avatar">
                                 <span class="creator-name">@cyberpunk</span>
                             </div>
                             <div class="nft-card__footer d-flex justify-content-between align-items-center mt-3">
                                 <div class="price">
-                                    <span class="price-label">Price</span>
+                                    <span class="price-label">Current Bid</span>
                                     <h6 class="price-value">4.0 ETH</h6>
+                                    <span class="nft-edition">Next bid +0.1 ETH</span>
                                 </div>
-                                <a href="" class="bid-btn">Place Bid</a>
+                                <a href="#!" class="bid-btn">Bid Now</a>
                             </div>
                         </div>
                     </div>
@@ -235,25 +239,25 @@
 
                 <!-- NFT Card 7 -->
                 <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="nft-card">
-                        <div class="nft-card__image"
-                            style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
-                            <img src="img/pic1.jpg" alt="NFT"
-                                style="opacity: 0.7; mix-blend-mode: luminosity; filter: sepia(0.3);">
+                    <div class="nft-card theme-galaxy">
+                        <div class="nft-card__image">
+                            <img src="img/pic1.jpg" alt="Galaxy Explorer #654 artwork">
                         </div>
                         <div class="nft-card__content">
                             <h5>Galaxy Explorer #654</h5>
+                            <p class="nft-card__desc">AI-assisted astro photography stitched from NASA deep-space
+                                archives.</p>
                             <div class="nft-card__creator d-flex align-items-center mt-2">
-                                <img src="img/avt1.jpg" alt="Creator" class="creator-avatar"
-                                    style="filter: hue-rotate(45deg);">
+                                <img src="img/avt1.jpg" alt="Creator" class="creator-avatar">
                                 <span class="creator-name">@spaceart</span>
                             </div>
                             <div class="nft-card__footer d-flex justify-content-between align-items-center mt-3">
                                 <div class="price">
                                     <span class="price-label">Price</span>
                                     <h6 class="price-value">2.8 ETH</h6>
+                                    <span class="nft-edition">Includes print</span>
                                 </div>
-                                <a href="" class="bid-btn">Place Bid</a>
+                                <a href="#!" class="bid-btn">Collect</a>
                             </div>
                         </div>
                     </div>
@@ -261,25 +265,24 @@
 
                 <!-- NFT Card 8 -->
                 <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="nft-card">
-                        <div class="nft-card__image"
-                            style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
-                            <img src="img/pic1.jpg" alt="NFT"
-                                style="opacity: 0.8; mix-blend-mode: color-dodge; filter: brightness(0.9);">
+                    <div class="nft-card theme-future">
+                        <div class="nft-card__image">
+                            <img src="img/pic1.jpg" alt="Future Vision #987 artwork">
                         </div>
                         <div class="nft-card__content">
                             <h5>Future Vision #987</h5>
+                            <p class="nft-card__desc">Speculative fashion sketches that unlock AR try-on filters.</p>
                             <div class="nft-card__creator d-flex align-items-center mt-2">
-                                <img src="img/avt1.jpg" alt="Creator" class="creator-avatar"
-                                    style="filter: hue-rotate(90deg);">
+                                <img src="img/avt1.jpg" alt="Creator" class="creator-avatar">
                                 <span class="creator-name">@visionary</span>
                             </div>
                             <div class="nft-card__footer d-flex justify-content-between align-items-center mt-3">
                                 <div class="price">
                                     <span class="price-label">Price</span>
                                     <h6 class="price-value">3.5 ETH</h6>
+                                    <span class="nft-edition">Utility included</span>
                                 </div>
-                                <a href="" class="bid-btn">Place Bid</a>
+                                <a href="#!" class="bid-btn">Collect</a>
                             </div>
                         </div>
                     </div>
@@ -289,7 +292,7 @@
             <!-- Load More Button -->
             <div class="row mt-5">
                 <div class="col-12 text-center">
-                    <a href="" class="action-btn"><span>Load More</span></a>
+                    <a href="explore.html" class="action-btn"><span>Load More Drops</span></a>
                 </div>
             </div>
         </div>

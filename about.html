@@ -3,64 +3,59 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="Learn how X-NFT champions storytellers with curated drops, artist services, and a community-first roadmap.">
-    <title>About - X-NFT</title>
+    <title>About Us — X-NFT</title>
 
+    <meta name="theme-color" content="#0c1035">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%235C27FE'/%3E%3Cpath d='M20 18l24 28M44 18L20 46' stroke='%23fff' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="header__body">
-                        <div class="header__logo">
-                            <a href="index.html">
-                                <h2 class="heart">X-NFT</h2>
-                            </a>
-                        </div>
+            <div class="header__body">
+                <a href="index.html" class="header__logo" aria-label="X-NFT home">
+                    <span class="heart">X-NFT</span>
+                </a>
 
-                        <div class="header__right">
-                            <nav class="main-nav">
-                                <ul class="menu">
-                                    <li class="menu-item">
-                                        <a href="index.html">Home</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="explore.html">Explore</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="about.html" class="active">About</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="roadmap.html">RoadMap</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="contact.html">Contact</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="header__action">
-                            <a href="contact.html#contact-form" class="action-btn "><span>Join Now</span></a>
-                        </div>
-                    </div>
+                <nav class="main-nav" id="main-nav" aria-label="Primary">
+                    <ul class="menu">
+                        <li class="menu-item"><a href="index.html">Home</a></li>
+                        <li class="menu-item"><a href="explore.html">Explore</a></li>
+                        <li class="menu-item"><a href="about.html" class="active" aria-current="page">About</a></li>
+                        <li class="menu-item"><a href="roadmap.html">RoadMap</a></li>
+                        <li class="menu-item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <a href="join.html" class="action-btn main-nav__cta"><span>Join Now</span></a>
+                </nav>
+
+                <div class="header__action">
+                    <a href="join.html" class="action-btn"><span>Join Now</span></a>
+                    <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false"
+                        aria-label="Open menu">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
             </div>
         </div>
     </header>
 
     <!-- About Hero Section -->
-    <section class="about-hero">
+    <main>
+    <section class="about-hero page-hero">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mt-3">
-                    <h1 class="heading">Why we built X-NFT</h1>
+                    <span class="eyebrow">Our story</span>
+                    <h1 class="heading">Why we built <span class="text-gradient nowrap">X-NFT</span></h1>
                     <p class="desc mt-3">A studio-meets-marketplace helping artists earn a living wage while giving
                         collectors work with provenance.</p>
                 </div>
@@ -74,12 +69,12 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="about-image">
-                        <img src="img/pic1.jpg" alt="About X-NFT">
+                        <img src="img/pic1.jpg" alt="Artwork from an early X-NFT micro-drop" loading="lazy">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="about-content">
-                        <h3 class="section-title">Our Story</h3>
+                        <h2 class="section-title">Our Story</h2>
                         <p class="section-desc">
                             X-NFT started as a late-night group chat between illustrators, sound designers, and devs
                             who wanted more from web3 than speculation. We pooled savings, launched a zine, and began
@@ -111,7 +106,7 @@
                 <div class="col-lg-6">
                     <div class="mission-card">
                         <div class="icon-wrapper">
-                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none"
+                            <svg aria-hidden="true" width="60" height="60" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#5C27FE" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round" />
@@ -129,7 +124,7 @@
                 <div class="col-lg-6">
                     <div class="mission-card">
                         <div class="icon-wrapper">
-                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none"
+                            <svg aria-hidden="true" width="60" height="60" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
                                     stroke="#5C27FE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -150,8 +145,8 @@
     <section class="core-values">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h3 class="section-title">Core Values</h3>
+                <div class="col-12 section-head">
+                    <h2 class="section-title">Core Values</h2>
                     <p class="section-desc">The principles that guide everything we do</p>
                 </div>
             </div>
@@ -159,7 +154,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="value-card">
                         <div class="value-icon">
-                            <svg width="50" height="50" viewBox="0 0 24 24" fill="none"
+                            <svg aria-hidden="true" width="50" height="50" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
@@ -177,7 +172,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="value-card">
                         <div class="value-icon">
-                            <svg width="50" height="50" viewBox="0 0 24 24" fill="none"
+                            <svg aria-hidden="true" width="50" height="50" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
@@ -193,7 +188,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="value-card">
                         <div class="value-icon">
-                            <svg width="50" height="50" viewBox="0 0 24 24" fill="none"
+                            <svg aria-hidden="true" width="50" height="50" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21"
@@ -216,7 +211,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="value-card">
                         <div class="value-icon">
-                            <svg width="50" height="50" viewBox="0 0 24 24" fill="none"
+                            <svg aria-hidden="true" width="50" height="50" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
@@ -235,27 +230,27 @@
     <section class="stats-section">
         <div class="container">
             <div class="row g-4 text-center">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-6">
                     <div class="stat-card">
-                        <h2 class="stat-number">10K+</h2>
+                        <p class="stat-number" data-count="10" data-suffix="K+">10K+</p>
                         <p class="stat-label">NFTs Created</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-6">
                     <div class="stat-card">
-                        <h2 class="stat-number">5K+</h2>
+                        <p class="stat-number" data-count="5" data-suffix="K+">5K+</p>
                         <p class="stat-label">Active Users</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-6">
                     <div class="stat-card">
-                        <h2 class="stat-number">2K+</h2>
+                        <p class="stat-number" data-count="2" data-suffix="K+">2K+</p>
                         <p class="stat-label">Creators</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-6">
                     <div class="stat-card">
-                        <h2 class="stat-number">$5M+</h2>
+                        <p class="stat-number" data-count="5" data-prefix="$" data-suffix="M+">$5M+</p>
                         <p class="stat-label">Total Volume</p>
                     </div>
                 </div>
@@ -267,67 +262,67 @@
     <section class="team-section">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h3 class="section-title">Meet Our Team</h3>
+                <div class="col-12 section-head">
+                    <h2 class="section-title">Meet Our Team</h2>
                     <p class="section-desc">The passionate people behind X-NFT</p>
                 </div>
             </div>
             <div class="row g-4">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-6">
                     <div class="team-card">
                         <div class="team-image">
-                            <img src="img/avt1.jpg" alt="Team Member">
+                            <img src="img/avt1.jpg" alt="Portrait of Alex Johnson" loading="lazy">
                         </div>
                         <div class="team-info">
                             <h5>Alex Johnson</h5>
                             <p class="team-role">CEO & Founder</p>
                             <div class="team-social">
-                                <a href="https://twitter.com/xnft" target="_blank" rel="noopener">Twitter</a> |
+                                <a href="https://twitter.com/xnft" target="_blank" rel="noopener">Twitter</a> &middot;
                                 <a href="https://www.linkedin.com/company/xnft" target="_blank" rel="noopener">LinkedIn</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-6">
                     <div class="team-card">
                         <div class="team-image">
-                            <img src="img/avt1.jpg" alt="Team Member">
+                            <img src="img/avt1.jpg" alt="Portrait of Sarah Chen" loading="lazy">
                         </div>
                         <div class="team-info">
                             <h5>Sarah Chen</h5>
                             <p class="team-role">CTO</p>
                             <div class="team-social">
-                                <a href="https://twitter.com/xnft" target="_blank" rel="noopener">Twitter</a> |
+                                <a href="https://twitter.com/xnft" target="_blank" rel="noopener">Twitter</a> &middot;
                                 <a href="https://www.linkedin.com/company/xnft" target="_blank" rel="noopener">LinkedIn</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-6">
                     <div class="team-card">
                         <div class="team-image">
-                            <img src="img/avt1.jpg" alt="Team Member">
+                            <img src="img/avt1.jpg" alt="Portrait of Marcus Rodriguez" loading="lazy">
                         </div>
                         <div class="team-info">
                             <h5>Marcus Rodriguez</h5>
                             <p class="team-role">Head of Design</p>
                             <div class="team-social">
-                                <a href="https://twitter.com/xnft" target="_blank" rel="noopener">Twitter</a> |
+                                <a href="https://twitter.com/xnft" target="_blank" rel="noopener">Twitter</a> &middot;
                                 <a href="https://www.linkedin.com/company/xnft" target="_blank" rel="noopener">LinkedIn</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-6">
                     <div class="team-card">
                         <div class="team-image">
-                            <img src="img/avt1.jpg" alt="Team Member">
+                            <img src="img/avt1.jpg" alt="Portrait of Emily Taylor" loading="lazy">
                         </div>
                         <div class="team-info">
                             <h5>Emily Taylor</h5>
                             <p class="team-role">Community Manager</p>
                             <div class="team-social">
-                                <a href="https://twitter.com/xnft" target="_blank" rel="noopener">Twitter</a> |
+                                <a href="https://twitter.com/xnft" target="_blank" rel="noopener">Twitter</a> &middot;
                                 <a href="https://www.linkedin.com/company/xnft" target="_blank" rel="noopener">LinkedIn</a>
                             </div>
                         </div>
@@ -340,15 +335,78 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h3 class="cta-title">Let’s build your next drop</h3>
-                    <p class="cta-desc">Pitch a concept, request studio support, or join our talent roster.</p>
-                    <a href="contact.html#contact-form" class="action-btn mt-4"><span>Talk With Us</span></a>
+            <div class="cta-box">
+                <h2 class="cta-title">Let’s build your next drop</h2>
+                <p class="cta-desc">Pitch a concept, request studio support, or join our talent roster.</p>
+                <div class="cta-actions">
+                    <a href="contact.html#contact-form" class="action-btn"><span>Talk With Us</span></a>
+                    <a href="explore.html" class="action-btn action-btn--ghost"><span>See Our Drops</span></a>
                 </div>
             </div>
         </div>
     </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__brand">
+                        <a href="index.html" class="heart">X-NFT</a>
+                        <p>A curator-led NFT house championing artists who experiment with light, sound, and code.</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/xnft" class="social-icon" target="_blank" rel="noopener" aria-label="X-NFT on Twitter">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://discord.gg/xnft" class="social-icon" target="_blank" rel="noopener" aria-label="X-NFT on Discord">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.1 13.1 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+                        </a>
+                        <a href="https://t.me/xnft" class="social-icon" target="_blank" rel="noopener" aria-label="X-NFT on Telegram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.833.94z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/xnft" class="social-icon" target="_blank" rel="noopener" aria-label="X-NFT on LinkedIn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h6 class="footer__title">Marketplace</h6>
+                    <ul class="footer__links">
+                        <li><a href="explore.html">Explore drops</a></li>
+                        <li><a href="roadmap.html">Roadmap</a></li>
+                        <li><a href="join.html">Create account</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h6 class="footer__title">Company</h6>
+                    <ul class="footer__links">
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h6 class="footer__title">Stay in the loop</h6>
+                    <p class="microcopy">New drops, artist spotlights, and roadmap updates every Friday.</p>
+                    <form class="newsletter" novalidate>
+                        <label for="newsletter-email" class="visually-hidden">Email address</label>
+                        <input type="email" id="newsletter-email" placeholder="you@example.com" autocomplete="email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <p class="footer__note">No spam. Unsubscribe any time.</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; <span data-year>2026</span> X-NFT. All rights reserved.</p>
+                <nav aria-label="Legal">
+                    <a href="#!" data-toast="Our Terms of Service page is coming soon.">Terms</a>
+                    <a href="#!" data-toast="Our Privacy Policy page is coming soon.">Privacy</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>

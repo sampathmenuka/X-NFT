@@ -3,96 +3,94 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="Browse the latest curated NFT drops from X-NFT — digital paintings, audio loops, game assets, and photography with transparent pricing.">
-    <title>Explore - X-NFT</title>
+    <title>Explore Drops — X-NFT</title>
 
+    <meta name="theme-color" content="#0c1035">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%235C27FE'/%3E%3Cpath d='M20 18l24 28M44 18L20 46' stroke='%23fff' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="header__body">
-                        <div class="header__logo">
-                            <a href="index.html">
-                                <h2 class="heart">X-NFT</h2>
-                            </a>
-                        </div>
+            <div class="header__body">
+                <a href="index.html" class="header__logo" aria-label="X-NFT home">
+                    <span class="heart">X-NFT</span>
+                </a>
 
-                        <div class="header__right">
-                            <nav class="main-nav">
-                                <ul class="menu">
-                                    <li class="menu-item">
-                                        <a href="index.html">Home</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="explore.html" class="active">Explore</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="about.html">About</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="roadmap.html">RoadMap</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="contact.html">Contact</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="header__action">
-                            <a href="contact.html#contact-form" class="action-btn "><span>Join Now</span></a>
-                        </div>
-                    </div>
+                <nav class="main-nav" id="main-nav" aria-label="Primary">
+                    <ul class="menu">
+                        <li class="menu-item"><a href="index.html">Home</a></li>
+                        <li class="menu-item"><a href="explore.html" class="active" aria-current="page">Explore</a></li>
+                        <li class="menu-item"><a href="about.html">About</a></li>
+                        <li class="menu-item"><a href="roadmap.html">RoadMap</a></li>
+                        <li class="menu-item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <a href="join.html" class="action-btn main-nav__cta"><span>Join Now</span></a>
+                </nav>
+
+                <div class="header__action">
+                    <a href="join.html" class="action-btn"><span>Join Now</span></a>
+                    <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false"
+                        aria-label="Open menu">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="explore-section">
+    <main class="explore-section">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-4">
-                    <h1 class="heading">Explore curated drops</h1>
-                    <p class="desc mt-3">Every collection is reviewed by the X-NFT curatorial board for authenticity,
-                        storytelling, and long-term value.</p>
-                </div>
+            <div class="section-head">
+                <h1 class="heading">Explore <span class="text-gradient">curated drops</span></h1>
+                <p class="desc mt-3">Every collection is reviewed by the X-NFT curatorial board for authenticity,
+                    storytelling, and long-term value.</p>
             </div>
 
-            <!-- Filter Section -->
-            <div class="row mb-5">
-                <div class="col-12">
-                    <div class="filter-bar d-flex justify-content-center gap-3 flex-wrap">
-                        <button class="filter-btn active" aria-pressed="true">All Drops</button>
-                        <button class="filter-btn" aria-pressed="false">Art</button>
-                        <button class="filter-btn" aria-pressed="false">Music</button>
-                        <button class="filter-btn" aria-pressed="false">Gaming</button>
-                        <button class="filter-btn" aria-pressed="false">Photography</button>
-                        <button class="filter-btn" aria-pressed="false">Sports</button>
-                    </div>
+            <!-- Search + Filters -->
+            <div class="explore-toolbar mb-5">
+                <div class="search-field">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+                    <label for="nft-search" class="visually-hidden">Search drops</label>
+                    <input type="search" id="nft-search" placeholder="Search by title, creator, or style…" autocomplete="off">
                 </div>
+                <div class="filter-bar" role="group" aria-label="Filter by category">
+                    <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All Drops</button>
+                    <button class="filter-btn" type="button" data-filter="art" aria-pressed="false">Art</button>
+                    <button class="filter-btn" type="button" data-filter="music" aria-pressed="false">Music</button>
+                    <button class="filter-btn" type="button" data-filter="gaming" aria-pressed="false">Gaming</button>
+                    <button class="filter-btn" type="button" data-filter="photography" aria-pressed="false">Photography</button>
+                    <button class="filter-btn" type="button" data-filter="sports" aria-pressed="false">Sports</button>
+                </div>
+                <p class="results-count" id="results-count" aria-live="polite"></p>
             </div>
 
             <!-- NFT Grid -->
-            <div class="row g-4">
-                <!-- NFT Card 1 -->
-                <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="row g-4" id="nft-grid">
+                <div class="col-xl-3 col-lg-4 col-md-6 nft-col" data-category="art">
                     <div class="nft-card theme-cosmic">
                         <div class="nft-card__image">
-                            <img src="img/pic1.jpg" alt="Cosmic Dreams #001 artwork">
+                            <span class="nft-card__tag">Art</span>
+                            <button class="like-btn" type="button" aria-pressed="false" aria-label="Like Cosmic Dreams #001">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                                <span>128</span>
+                            </button>
+                            <img src="img/pic1.jpg" alt="Cosmic Dreams #001 artwork" loading="lazy">
                         </div>
                         <div class="nft-card__content">
                             <h5>Cosmic Dreams #001</h5>
-                            <p class="nft-card__desc">Hand-painted nebula animation rendered with generative shaders
-                                and layered ambience.</p>
-                            <div class="nft-card__creator d-flex align-items-center mt-2">
-                                <img src="img/avt1.jpg" alt="Creator" class="creator-avatar">
+                            <p class="nft-card__desc">Hand-painted nebula animation rendered with generative shaders and layered ambience.</p>
+                            <div class="nft-card__creator d-flex align-items-center">
+                                <img src="img/avt1.jpg" alt="" class="creator-avatar">
                                 <span class="creator-name">@creator001</span>
                             </div>
                             <div class="nft-card__footer d-flex justify-content-between align-items-center mt-3">
@@ -101,24 +99,26 @@
                                     <h6 class="price-value">2.5 ETH</h6>
                                     <span class="nft-edition">Edition of 40</span>
                                 </div>
-                                <a href="#!" class="bid-btn">Place Bid</a>
+                                <a href="#!" class="bid-btn" data-toast="Connect a wallet to place a bid — wallet support is launching soon.">Place Bid</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- NFT Card 2 -->
-                <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="col-xl-3 col-lg-4 col-md-6 nft-col" data-category="music">
                     <div class="nft-card theme-harmony">
                         <div class="nft-card__image">
-                            <img src="img/pic1.jpg" alt="Digital Harmony #042 artwork">
+                            <span class="nft-card__tag">Music</span>
+                            <button class="like-btn" type="button" aria-pressed="false" aria-label="Like Digital Harmony #042">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                                <span>87</span>
+                            </button>
+                            <img src="img/pic1.jpg" alt="Digital Harmony #042 artwork" loading="lazy">
                         </div>
                         <div class="nft-card__content">
                             <h5>Digital Harmony #042</h5>
-                            <p class="nft-card__desc">A synesthetic study pairing glitch typography with layered synth
-                                chords.</p>
-                            <div class="nft-card__creator d-flex align-items-center mt-2">
-                                <img src="img/avt1.jpg" alt="Creator" class="creator-avatar">
+                            <p class="nft-card__desc">A synesthetic study pairing glitch typography with layered synth chords.</p>
+                            <div class="nft-card__creator d-flex align-items-center">
+                                <img src="img/avt1.jpg" alt="" class="creator-avatar">
                                 <span class="creator-name">@artmaster</span>
                             </div>
                             <div class="nft-card__footer d-flex justify-content-between align-items-center mt-3">
@@ -127,24 +127,26 @@
                                     <h6 class="price-value">1.8 ETH</h6>
                                     <span class="nft-edition">1 of 25</span>
                                 </div>
-                                <a href="#!" class="bid-btn">Make Offer</a>
+                                <a href="#!" class="bid-btn" data-toast="Connect a wallet to make an offer — wallet support is launching soon.">Make Offer</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- NFT Card 3 -->
-                <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="col-xl-3 col-lg-4 col-md-6 nft-col" data-category="art">
                     <div class="nft-card theme-wave">
                         <div class="nft-card__image">
-                            <img src="img/pic1.jpg" alt="Abstract Wave #123 artwork">
+                            <span class="nft-card__tag">Art</span>
+                            <button class="like-btn" type="button" aria-pressed="false" aria-label="Like Abstract Wave #123">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                                <span>152</span>
+                            </button>
+                            <img src="img/pic1.jpg" alt="Abstract Wave #123 artwork" loading="lazy">
                         </div>
                         <div class="nft-card__content">
                             <h5>Abstract Wave #123</h5>
-                            <p class="nft-card__desc">Sublime gradients and motion-captured brush strokes depicting
-                                breath-work cycles.</p>
-                            <div class="nft-card__creator d-flex align-items-center mt-2">
-                                <img src="img/avt1.jpg" alt="Creator" class="creator-avatar">
+                            <p class="nft-card__desc">Sublime gradients and motion-captured brush strokes depicting breath-work cycles.</p>
+                            <div class="nft-card__creator d-flex align-items-center">
+                                <img src="img/avt1.jpg" alt="" class="creator-avatar">
                                 <span class="creator-name">@wavecreator</span>
                             </div>
                             <div class="nft-card__footer d-flex justify-content-between align-items-center mt-3">
@@ -153,24 +155,26 @@
                                     <h6 class="price-value">3.2 ETH</h6>
                                     <span class="nft-edition">Auction ends in 6h</span>
                                 </div>
-                                <a href="#!" class="bid-btn">Increase Bid</a>
+                                <a href="#!" class="bid-btn" data-toast="Connect a wallet to place a bid — wallet support is launching soon.">Increase Bid</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- NFT Card 4 -->
-                <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="col-xl-3 col-lg-4 col-md-6 nft-col" data-category="art">
                     <div class="nft-card theme-neon">
                         <div class="nft-card__image">
-                            <img src="img/pic1.jpg" alt="Neon City #456 artwork">
+                            <span class="nft-card__tag">Art</span>
+                            <button class="like-btn" type="button" aria-pressed="false" aria-label="Like Neon City #456">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                                <span>96</span>
+                            </button>
+                            <img src="img/pic1.jpg" alt="Neon City #456 artwork" loading="lazy">
                         </div>
                         <div class="nft-card__content">
                             <h5>Neon City #456</h5>
-                            <p class="nft-card__desc">A cinematic fly-through of a synthwave skyline rendered in real
-                                time.</p>
-                            <div class="nft-card__creator d-flex align-items-center mt-2">
-                                <img src="img/avt1.jpg" alt="Creator" class="creator-avatar">
+                            <p class="nft-card__desc">A cinematic fly-through of a synthwave skyline rendered in real time.</p>
+                            <div class="nft-card__creator d-flex align-items-center">
+                                <img src="img/avt1.jpg" alt="" class="creator-avatar">
                                 <span class="creator-name">@neonart</span>
                             </div>
                             <div class="nft-card__footer d-flex justify-content-between align-items-center mt-3">
@@ -179,24 +183,26 @@
                                     <h6 class="price-value">2.0 ETH</h6>
                                     <span class="nft-edition">Minting now</span>
                                 </div>
-                                <a href="#!" class="bid-btn">Collect</a>
+                                <a href="#!" class="bid-btn" data-toast="Connect a wallet to collect — wallet support is launching soon.">Collect</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- NFT Card 5 -->
-                <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="col-xl-3 col-lg-4 col-md-6 nft-col" data-category="gaming">
                     <div class="nft-card theme-pixel">
                         <div class="nft-card__image">
-                            <img src="img/pic1.jpg" alt="Pixel Paradise #789 artwork">
+                            <span class="nft-card__tag">Gaming</span>
+                            <button class="like-btn" type="button" aria-pressed="false" aria-label="Like Pixel Paradise #789">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                                <span>64</span>
+                            </button>
+                            <img src="img/pic1.jpg" alt="Pixel Paradise #789 artwork" loading="lazy">
                         </div>
                         <div class="nft-card__content">
                             <h5>Pixel Paradise #789</h5>
-                            <p class="nft-card__desc">8-bit flora inspired by vintage arcade palettes and tropical
-                                gradients.</p>
-                            <div class="nft-card__creator d-flex align-items-center mt-2">
-                                <img src="img/avt1.jpg" alt="Creator" class="creator-avatar">
+                            <p class="nft-card__desc">8-bit flora inspired by vintage arcade palettes and tropical gradients.</p>
+                            <div class="nft-card__creator d-flex align-items-center">
+                                <img src="img/avt1.jpg" alt="" class="creator-avatar">
                                 <span class="creator-name">@pixelking</span>
                             </div>
                             <div class="nft-card__footer d-flex justify-content-between align-items-center mt-3">
@@ -205,24 +211,26 @@
                                     <h6 class="price-value">1.5 ETH</h6>
                                     <span class="nft-edition">Gamified utility</span>
                                 </div>
-                                <a href="#!" class="bid-btn">Collect</a>
+                                <a href="#!" class="bid-btn" data-toast="Connect a wallet to collect — wallet support is launching soon.">Collect</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- NFT Card 6 -->
-                <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="col-xl-3 col-lg-4 col-md-6 nft-col" data-category="gaming">
                     <div class="nft-card theme-cyber">
                         <div class="nft-card__image">
-                            <img src="img/pic1.jpg" alt="Cyber Punk #321 artwork">
+                            <span class="nft-card__tag">Gaming</span>
+                            <button class="like-btn" type="button" aria-pressed="false" aria-label="Like Cyber Punk #321">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                                <span>214</span>
+                            </button>
+                            <img src="img/pic1.jpg" alt="Cyber Punk #321 artwork" loading="lazy">
                         </div>
                         <div class="nft-card__content">
                             <h5>Cyber Punk #321</h5>
-                            <p class="nft-card__desc">Procedural avatars wired with on-chain traits for metaverse
-                                games.</p>
-                            <div class="nft-card__creator d-flex align-items-center mt-2">
-                                <img src="img/avt1.jpg" alt="Creator" class="creator-avatar">
+                            <p class="nft-card__desc">Procedural avatars wired with on-chain traits for metaverse games.</p>
+                            <div class="nft-card__creator d-flex align-items-center">
+                                <img src="img/avt1.jpg" alt="" class="creator-avatar">
                                 <span class="creator-name">@cyberpunk</span>
                             </div>
                             <div class="nft-card__footer d-flex justify-content-between align-items-center mt-3">
@@ -231,24 +239,26 @@
                                     <h6 class="price-value">4.0 ETH</h6>
                                     <span class="nft-edition">Next bid +0.1 ETH</span>
                                 </div>
-                                <a href="#!" class="bid-btn">Bid Now</a>
+                                <a href="#!" class="bid-btn" data-toast="Connect a wallet to place a bid — wallet support is launching soon.">Bid Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- NFT Card 7 -->
-                <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="col-xl-3 col-lg-4 col-md-6 nft-col" data-category="photography">
                     <div class="nft-card theme-galaxy">
                         <div class="nft-card__image">
-                            <img src="img/pic1.jpg" alt="Galaxy Explorer #654 artwork">
+                            <span class="nft-card__tag">Photography</span>
+                            <button class="like-btn" type="button" aria-pressed="false" aria-label="Like Galaxy Explorer #654">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                                <span>118</span>
+                            </button>
+                            <img src="img/pic1.jpg" alt="Galaxy Explorer #654 artwork" loading="lazy">
                         </div>
                         <div class="nft-card__content">
                             <h5>Galaxy Explorer #654</h5>
-                            <p class="nft-card__desc">AI-assisted astro photography stitched from NASA deep-space
-                                archives.</p>
-                            <div class="nft-card__creator d-flex align-items-center mt-2">
-                                <img src="img/avt1.jpg" alt="Creator" class="creator-avatar">
+                            <p class="nft-card__desc">AI-assisted astro photography stitched from NASA deep-space archives.</p>
+                            <div class="nft-card__creator d-flex align-items-center">
+                                <img src="img/avt1.jpg" alt="" class="creator-avatar">
                                 <span class="creator-name">@spaceart</span>
                             </div>
                             <div class="nft-card__footer d-flex justify-content-between align-items-center mt-3">
@@ -257,23 +267,26 @@
                                     <h6 class="price-value">2.8 ETH</h6>
                                     <span class="nft-edition">Includes print</span>
                                 </div>
-                                <a href="#!" class="bid-btn">Collect</a>
+                                <a href="#!" class="bid-btn" data-toast="Connect a wallet to collect — wallet support is launching soon.">Collect</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- NFT Card 8 -->
-                <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="col-xl-3 col-lg-4 col-md-6 nft-col" data-category="art">
                     <div class="nft-card theme-future">
                         <div class="nft-card__image">
-                            <img src="img/pic1.jpg" alt="Future Vision #987 artwork">
+                            <span class="nft-card__tag">Art</span>
+                            <button class="like-btn" type="button" aria-pressed="false" aria-label="Like Future Vision #987">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                                <span>73</span>
+                            </button>
+                            <img src="img/pic1.jpg" alt="Future Vision #987 artwork" loading="lazy">
                         </div>
                         <div class="nft-card__content">
                             <h5>Future Vision #987</h5>
                             <p class="nft-card__desc">Speculative fashion sketches that unlock AR try-on filters.</p>
-                            <div class="nft-card__creator d-flex align-items-center mt-2">
-                                <img src="img/avt1.jpg" alt="Creator" class="creator-avatar">
+                            <div class="nft-card__creator d-flex align-items-center">
+                                <img src="img/avt1.jpg" alt="" class="creator-avatar">
                                 <span class="creator-name">@visionary</span>
                             </div>
                             <div class="nft-card__footer d-flex justify-content-between align-items-center mt-3">
@@ -282,21 +295,84 @@
                                     <h6 class="price-value">3.5 ETH</h6>
                                     <span class="nft-edition">Utility included</span>
                                 </div>
-                                <a href="#!" class="bid-btn">Collect</a>
+                                <a href="#!" class="bid-btn" data-toast="Connect a wallet to collect — wallet support is launching soon.">Collect</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Load More Button -->
-            <div class="row mt-5">
-                <div class="col-12 text-center">
-                    <a href="explore.html" class="action-btn"><span>Load More Drops</span></a>
-                </div>
+            <div class="empty-state" id="empty-state">
+                <h5>No drops match yet</h5>
+                <p class="mb-4">Try another category or search term — new collections land every Friday.</p>
+                <button type="button" class="action-btn action-btn--ghost" id="reset-filters"><span>Reset filters</span></button>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="#!" class="action-btn" data-toast="You're all caught up — new drops land every Friday."><span>Load More Drops</span></a>
             </div>
         </div>
-    </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__brand">
+                        <a href="index.html" class="heart">X-NFT</a>
+                        <p>A curator-led NFT house championing artists who experiment with light, sound, and code.</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/xnft" class="social-icon" target="_blank" rel="noopener" aria-label="X-NFT on Twitter">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://discord.gg/xnft" class="social-icon" target="_blank" rel="noopener" aria-label="X-NFT on Discord">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.1 13.1 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+                        </a>
+                        <a href="https://t.me/xnft" class="social-icon" target="_blank" rel="noopener" aria-label="X-NFT on Telegram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.833.94z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/xnft" class="social-icon" target="_blank" rel="noopener" aria-label="X-NFT on LinkedIn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h6 class="footer__title">Marketplace</h6>
+                    <ul class="footer__links">
+                        <li><a href="explore.html">Explore drops</a></li>
+                        <li><a href="roadmap.html">Roadmap</a></li>
+                        <li><a href="join.html">Create account</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h6 class="footer__title">Company</h6>
+                    <ul class="footer__links">
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h6 class="footer__title">Stay in the loop</h6>
+                    <p class="microcopy">New drops, artist spotlights, and roadmap updates every Friday.</p>
+                    <form class="newsletter" novalidate>
+                        <label for="newsletter-email" class="visually-hidden">Email address</label>
+                        <input type="email" id="newsletter-email" placeholder="you@example.com" autocomplete="email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <p class="footer__note">No spam. Unsubscribe any time.</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; <span data-year>2026</span> X-NFT. All rights reserved.</p>
+                <nav aria-label="Legal">
+                    <a href="#!" data-toast="Our Terms of Service page is coming soon.">Terms</a>
+                    <a href="#!" data-toast="Our Privacy Policy page is coming soon.">Privacy</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
